@@ -1,0 +1,44 @@
+
+<div class="dashboard-div">
+<nav class="navbar navbar-expand-lg bg-body-primary dashboard-top">
+  <div class="container-fluid" style="padding: 0 3rem;">
+      <a class="navbar-brand" href="#">
+          <img src="../../assets/Logo-without-title.png" alt="Logo" width="40" height="28" class="d-inline-block align-text-top">
+          Explore Ease
+      </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="true" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#user-home">Explore</a>
+        </li>
+        <li *ngIf="isManager === true" class="nav-item">
+          <a class="nav-link" href="#managerLocation">Manage Locations</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact Us</a>
+        </li>
+        <li *ngIf="isUser === true" class="nav-item">
+          <a class="nav-link" href="#user-profile">My Bookings</a>
+        </li>
+      </ul>
+    </div>
+    <div class="icon-button-div">
+    <button *ngIf="!isLoggedIn" mat-raised-button title="Login" (click)="clickLogin()">
+      <mat-icon>login</mat-icon>Login
+    </button>
+    <button *ngIf="isLoggedIn" mat-button title="Profile" (click)="clickProfile()">
+      <mat-icon>account_circle</mat-icon>Profile
+    </button>
+    <button *ngIf="isLoggedIn" mat-button title="Log Out" (click)="clickLogout()">
+      <mat-icon>arrow_circle_left</mat-icon>Log Out
+    </button>
+  </div>
+  </div>
+</nav>
+</div>

@@ -1,0 +1,40 @@
+
+.page_404 {
+    padding: 40px 0;
+    background: #fff;
+    
+    height: 68vh;
+    background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.text-center{
+    font-size: 80px;
+    display: inline;
+    padding-left: 43%;
+   
+}
+
+
+
+.link_404 {
+    color: #fff !important;
+    padding: 10px 20px;
+    background: #39ac31;
+    
+    
+    
+}
+.btn{
+    position: absolute;
+    padding-left: 63%;
+    padding-top: 16%;
+}
+
+.contant_box_404 {
+    position:absolute;
+    padding-left: 36%;
+    padding-top: 15%;
+}

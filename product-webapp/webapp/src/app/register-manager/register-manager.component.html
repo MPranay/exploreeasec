@@ -1,0 +1,224 @@
+<app-dashboard></app-dashboard>
+<div class="register-card">
+    <div class="welcome-message">
+        <img class="logo" src="../../assets/logo-inverted.png"/>
+        <span 
+            style=" color: #ffffff;
+                    font-size: large;
+                    text-shadow: 3px 6px 6px #000000;">
+                    Greetings & Welcome!</span>
+        <span 
+            style=" color: white;
+            font-size: small;">
+        <span >Manager Registration.</span></span>
+    </div>
+<div class="register-form">
+    <div class="image-upload-input">
+        <img class="manager-pfp" [src]="url" alt="Profile Picture"/>
+            <span class="helper-text-pfp">Add a Profile Picture</span>
+                <input class="image-upload-input-field" (change)="imageUpload($event)"  type="file">
+    </div>
+    <input type="file">
+
+    <form class="row g-3">
+        <div class="col-md-6">
+            <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Email</label>
+            <input 
+            type="email" 
+            class="form-control form-control-sm" 
+            id="inputEmail4"
+            name="email"
+            placeholder="name@example.com"
+            [(ngModel)]="currManager.email">
+        </div>
+        <div class="col-md-6">
+            <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">FullName</label>
+            <input 
+            type="email" 
+            class="form-control form-control-sm"
+            name="Fullname" 
+            id="inputEmail4"
+            placeholder="Fullname"
+            required [(ngModel)]="currManager.fullname">
+        </div>
+        <div class="col-md-6">
+            <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Username</label>
+            <input 
+            type="email" 
+            class="form-control form-control-sm" 
+            id="inputEmail4"
+            name="username" 
+            placeholder="Enter username"
+            [(ngModel)]="currManager.managername"
+            >
+        </div>
+        <div class="col-md-6">
+            <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Password</label>
+          <input 
+            type="password" 
+            class="form-control form-control-sm" 
+            id="inputPassword4"
+            name="password"
+            placeholder="Password"
+            required 
+            [(ngModel)]="currManager.password">
+        </div>
+        <div class="col-md-4">
+            <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Gender</label>
+          <select 
+            id="inputState" 
+            class="form-select"
+            name="gender" 
+            required 
+            [(ngModel)]="currManager.gender">
+            <option>Male</option>
+          <option>Female</option>
+          <option>Other</option>
+          </select>
+        </div>
+        <div class="col-md-4">
+            <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Contact</label>
+          <input 
+          type="number" 
+          class="form-control" 
+          id="ContactInput"
+          name="contact"
+          placeholder="+91"
+          [(ngModel)]="currManager.contact">
+        </div>
+        <div class="col-md-4">
+            <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Age</label>
+          <input 
+            type="number" 
+            class="form-control" 
+            id="ContactInput"
+            name="age"
+            placeholder="Your age"
+            [(ngModel)]="currManager.age">
+        </div>
+        <div class="col-md-4">
+            <label class="helper-text" for="exampleInputEmail1">Location</label>
+        <input 
+            type="text" 
+            class="form-control form-control-sm" 
+            name="Location" 
+            placeholder="Enter Location Name"
+            [(ngModel)]="currManager.location">
+
+        </div>
+        <div class="col-md-4">
+            <label class="helper-text" for="exampleInputEmail1">LocationID</label>
+        <input 
+            type="number" 
+            class="form-control form-control-sm" 
+            name="LocationID"
+            placeholder=""
+            [(ngModel)]="currManager.locationId">
+        </div>
+      </form>
+        <div class="button-div">
+            <button mat-raised-button style="background-color: #212a3e;color: white;" (click)="onSubmit()">Submit</button>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<!-- <form class="register-form-area">
+    <div class="form-group">
+        <label class="helper-text" for="exampleFormControlInput1">Email address</label>
+        <input 
+            type="email"
+            class="form-control form-control-sm" 
+            name="username"
+            placeholder="name@example.com"
+            [(ngModel)]="currManager.email">
+    </div>
+    <div class="form-group">
+        <label class="helper-text" for="exampleInputEmail1">Full Name</label>
+        <input 
+            type="text" 
+            class="form-control form-control-sm" 
+            name="fullname"
+            aria-describedby="emailHelp" 
+            placeholder="Full name"
+            required [(ngModel)]="currManager.fullname">
+    </div>
+      <div class="form-group">
+        <label class="helper-text" for="exampleInputEmail1">Username</label>
+        <input 
+            type="text" 
+            class="form-control form-control-sm" 
+            name="username" 
+            placeholder="Enter username"
+            [(ngModel)]="currManager.managername">
+
+      </div>
+    <div class="form-group">
+      <label class="helper-text" for="exampleInputPassword1">Password</label>
+      <input 
+        type="password" 
+        class="form-control form-control-sm" 
+        name="password"
+        placeholder="Password"
+        required 
+        [(ngModel)]="currManager.password">
+    </div>
+    <div class="form-group">
+        <label class="helper-text" for="exampleFormControlSelect1">Your Gender</label>
+        <select 
+            class="form-control form-control-sm" 
+            name="gender" required [(ngModel)]="currManager.gender">
+          <option>Male</option>
+          <option>Female</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="helper-text" for="exampleInputEmail1">Contact no.</label>
+        <input 
+            type="number" 
+            class="form-control form-control-sm" 
+            name="contact"
+            placeholder="+91"
+            [(ngModel)]="currManager.contact">
+      </div>
+      <div class="form-group">
+        <label class="helper-text" for="exampleInputEmail1">Age</label>
+        <input 
+            type="number" 
+            class="form-control form-control-sm" 
+            name="age"
+            placeholder="Enter Age"
+            [(ngModel)]="currManager.age">
+      </div>
+      <div class="form-group">
+        <label class="helper-text" for="exampleInputEmail1">Location</label>
+        <input 
+            type="text" 
+            class="form-control form-control-sm" 
+            name="Location" 
+            placeholder="Enter Location Name"
+            [(ngModel)]="currManager.location">
+
+      </div>
+      <div class="form-group">
+        <label class="helper-text" for="exampleInputEmail1">LocationID</label>
+        <input 
+            type="number" 
+            class="form-control form-control-sm" 
+            name="LocationID"
+            placeholder=""
+            [(ngModel)]="currManager.locationId">
+      </div>
+    
+
+    </form> -->
+
+
+
+
+

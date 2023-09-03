@@ -1,0 +1,29 @@
+.profile-text{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.profile-card-row{
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+    gap: 5rem;
+    justify-content: center;
+    min-width: 48.125rem;
+    overflow: auto;
+}
+.profile-details-div{
+    width: 50vw;
+}
+.button-div{
+    display: flex;
+    gap: 2rem;
+}
+.fileInput{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 10vw;
+}

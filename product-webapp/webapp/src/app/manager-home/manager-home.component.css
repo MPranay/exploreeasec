@@ -1,0 +1,18 @@
+
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+}
+.manager-home-body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: #212a3e;
+}
+.manager-home-tab{
+    height: 80vh;
+    width: 80vw;
+    background-color: aliceblue;
+}

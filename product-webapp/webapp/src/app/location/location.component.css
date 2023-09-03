@@ -1,0 +1,94 @@
+.location-slider{
+  min-height: 100vh;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #FAACA8;
+  background-image: linear-gradient(19deg, #bcbcbc 0%, #ffffff 100%);
+  gap: 1rem;
+  padding: 1rem;
+}
+.blur-div{
+  backdrop-filter: blur(1px);
+}
+.loc-title {
+	font-family: 'Montserrat';
+  -webkit-text-stroke: 0.5px black;
+  font-weight: 700;
+	vertical-align: middle;
+	text-align: center;
+	
+	font-size:50pt;
+	color: blue;
+	color: #fff;
+	background: linear-gradient(110deg, #BBD2C5 33%, rgba(0, 0, 0, 0) 33%), linear-gradient(110deg, #cbcaa5 34%, #E9E4F0 34%);
+	background-size: 400%;
+	-webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  z-index: 999;
+}
+
+.loc-title{
+		animation: Gradient 5s ease infinite;
+		-webkit-animation: Gradient 15s ease infinite;
+		-moz-animation: Gradient 5s ease infinite;
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 30% 50%
+	}
+	50% {
+		background-position: 25% 50%
+	}
+	100% {
+		background-position: 30% 50%
+	}
+}
+.slider-container{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 1 ease-in-out;
+  min-height: 70vh;
+  min-width: 90vw;
+}
+.location-details-tab{
+  height: 55vh;
+  width: 90vw;
+  overflow: auto;
+  background-color: white;
+}
+.Button-Div{
+  background-color: #212a3e;
+  color: white;
+  position: sticky;
+  top: 5rem;
+  right: 5rem;
+}
+.tab-text{
+    padding: 4rem;
+    font-size: large;
+    height: 15rem;
+}
+.card-containers{
+    display: grid;
+    flex-direction: row;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-items: center;
+    align-items: center;
+  
+  
+}
+.ratings {
+  color: goldenrod;
+  
+}
+.new{
+  max-width: 210px;
+}

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bf1ac5be-3e05-45cf-9d31-3a8600ff1403" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../product-webapp/webapp/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../product-webapp/webapp/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../product-webapp/webapp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../product-webapp/webapp/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../product-webapp/webapp/src/app/edit-location/edit-location.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../product-webapp/webapp/src/app/edit-location/edit-location.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../product-webapp/webapp/src/app/manager-home/managerComponents/manager-locations/manager-locations.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../product-webapp/webapp/src/app/manager-home/managerComponents/manager-locations/manager-locations.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../product-webapp/webapp/src/app/manager-home/managerComponents/manager-locations/manager-locations.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../product-webapp/webapp/src/app/manager-home/managerComponents/manager-locations/manager-locations.component.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2TxooekQVgmFfCRJiPPSW7AIs5Q" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/KIIT/Desktop/CGI_Stackroute_Assignments/1Capstone Project/exploreease/TicketBookingService"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="TicketBookingService" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="TicketBookingService" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bf1ac5be-3e05-45cf-9d31-3a8600ff1403" name="Changes" comment="" />
+      <created>1691994275171</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1691994275171</updated>
+    </task>
+    <servers />
+  </component>
+</project>

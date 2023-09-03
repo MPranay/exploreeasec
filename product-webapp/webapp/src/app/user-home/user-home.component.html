@@ -1,0 +1,103 @@
+<app-dashboard></app-dashboard>
+<div class="user-homepage-body">  
+
+    <section class="top-page-bar">
+      <!-- <form class="d-flex" role="search">
+        <input class="form-control search-bar me-2" type="search" placeholder="Search" aria-label="Search">
+        <button mat-raised-button>Search</button>
+      </form> -->
+    </section>
+
+    <section class="section-heading">
+      <h3>Search your favourite Spots</h3>
+    </section>
+
+
+    <section class="filter-section">
+      <div class="filter-options">
+        <div class="filter-option-single">
+              <label for="stateSelect">State:</label>
+              <select class="form-select" aria-label="Default select example" [(ngModel)]="filterField"  >
+                <mat-hint>Select One</mat-hint>
+                <option *ngFor="let state of indianStates" [value]="state.name">{{ state.name }}</option>
+              </select>
+        </div>
+        <div>
+          <button mat-raised-button (click)="filterButton()">Go</button>
+        </div>
+        
+      </div>
+      <button *ngIf="filterDiv" mat-icon-button  (click)="closeFilterButton()">
+        <mat-icon>
+          close
+        </mat-icon>
+      </button>
+        <div  *ngIf="filterDiv" class="modal-body modal-xl">
+          <h2 class="fs-5">Search Results</h2>
+          <div class="list-group">
+            <button *ngFor="let i of filteredItems" type="button" class="list-group-item list-group-item-action" style="width: 30vw;" aria-current="true">
+              {{i.heading}}
+            </button>
+          </div>
+        </div>
+
+    </section>
+
+
+    <section class="section-heading">
+      <h3>
+        Most Popular
+      </h3>
+    </section>
+
+      <section class="carousel-section hidden">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" >
+          <div class="carousel-inner">
+            <div class="carousel-item" *ngFor="let url of mostPopular; let isFirst = first" [ngClass]="{ 'active': isFirst }" data-bs-interval="2000">
+              <div class="carousel-image">
+                <img [src]= url.src alt="" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                  <div style="text-shadow:2px 2px 3px black ;">
+                  <h5>{{url.heading}}</h5>
+                  <p>{{url.desc}}</p>
+                  <button mat-raised-button style="background-color: orangered;color : white" (click)="routeTo(url.locationId)">
+                    Visit now
+                  </button>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="section-heading">
+        <h3>
+          Recommended
+        </h3>
+      </section>
+
+      <section class="recommended-section"> 
+        <div *ngFor="let i of imageUrls" class="location-card-container">
+          <div class="card" style="width: 18rem;">
+            <img [src]="i.locationImags[0]" class="card-img-top" [alt]=i.location>
+            <div class="card-body">
+              <h6 class="card-title">{{i.location}}</h6>
+              <!-- <p class="card-text" style="min-height: 5rem;">{{i.locationDetails}}</p> -->
+              <div class="button-div">
+                  <button  class="btn" style="background-color: #212a3e; color: white; " mat-raised-button (click)="routeTo(i.locationId)">More Details</button>
+              </div>
+            </div>
+          </div>
+        </div>    
+      </section>
+
+</div>

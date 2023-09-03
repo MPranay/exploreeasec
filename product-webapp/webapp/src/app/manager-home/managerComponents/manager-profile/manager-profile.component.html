@@ -1,0 +1,65 @@
+<div class="manager-profile">
+    <div class="profile-text">
+        <h6>Profile Details</h6>
+    </div>
+    <div class="profile-card-row">
+        <div class="fileInput">
+            <img style="border-radius: 50%;width: 10rem;height: 10rem;" [src]="url" alt=""/>
+            <div class="mb-3">
+                <label for="formFileSm" class="form-label">Upload New Profile Picture</label>
+                <input class="form-control form-control-sm" id="formFileSm" (change)="imageUpload($event)" type="file">
+            </div>
+            <div style="display: flex;flex-direction: row;gap: 1rem;">
+                <button type="submit" *ngIf="imageChanged" class="btn btn-success" (click)="updateImage()">Confirm</button>
+                <button type="submit" *ngIf="imageChanged" class="btn btn-danger" (click)="resetImage()">Reset</button>
+            </div>
+        </div>
+        <div class="profile-details-div">
+            <form class="row g-3">
+                <div class="col-md-6">
+                  <label for="inputEmail4"  class="form-label col-form-label-sm">Email</label>
+                  <input type="email" [disabled]="true" value="email@gmail.com" class="form-control form-control-sm" [value]=managerOne.email id="inputEmail4">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputFullname" class="form-label col-form-label-sm">Full Name</label>
+                  <input type="text" [disabled]="fieldEditDisabled" class="form-control form-control-sm" [(ngModel)]=managerOne.name name="managername" id="inputFullname1">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputCurrentPassword" class="form-label col-form-label-sm">Current Password</label>
+                    <input type="password" [disabled]="passEditDisbaled" class="form-control form-control-sm" name="currentPassword" [(ngModel)]="curPass" id="inputCurrentPassword1">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputNewPassword" class="form-label col-form-label-sm">New Password</label>
+                    <input type="password" [disabled]="passEditDisbaled" class="form-control form-control-sm" name="NewPassowrd" [(ngModel)]="newPass" id="inputNewPassword1">
+                </div>
+                <div class="col-md-4">
+                    <label for="inputUsername" class="form-label col-form-label-sm">Username</label>
+                    <input type="text" [disabled]="fieldEditDisabled" class="form-control form-control-sm" [(ngModel)]=managerOne.username name="username" id="inputUsername1">
+                </div>
+                <div class="col-md-2">
+                  <label for="inputContact" class="form-label col-form-label-sm">Contact</label>
+                  <input type="text" [disabled]="fieldEditDisabled" [(ngModel)]=managerOne.contact name="contact" class="form-control form-control-sm" id="inputContact1">
+                </div>
+                <div class="col-md-2">
+                    <label for="inputAge" class="form-label col-form-label-sm">Age</label>
+                    <input type="text" [disabled]="fieldEditDisabled" [(ngModel)]=managerOne.age class="form-control form-control-sm" id="inputAge" name="age">
+                  </div>
+                  <div class="col-md-2">
+                    <label for="inputGender" class="form-label col-form-label-sm">Gender</label>
+                    <select id="inputGender1" [disabled]="fieldEditDisabled" [(ngModel)]=managerOne.gender class="form-select form-select-sm" name="gender">
+                      <option selected>{{managerOne.gender}}</option>
+                      <option>Male</option>
+                      <option>Female</option>
+                      <option>Others</option>
+                    </select>
+                  </div>
+                <div class="col-md-12 button-div">
+                    <button type="submit" *ngIf="fieldEditDisabled" class="btn btn-primary" (click)="enableFieldEdit()">Edit Details</button>
+                    <button type="submit" *ngIf="!fieldEditDisabled && passEditDisbaled" class="btn btn-success" (click)="[disableFieldEdit(),onConfirm()]">Confirm</button>
+                    <button type="submit" *ngIf="!fieldEditDisabled && passEditDisbaled" class="btn btn-danger" (click)="disableFieldEdit()">Cancel</button>
+                    </div>
+              </form>
+            </div>
+    </div>
+
+</div>

@@ -1,0 +1,92 @@
+<app-dashboard></app-dashboard>
+<div class="homepage-body">
+
+  <section class="logo-section hidden">
+    
+    <img src="../../assets/logo-inverted-without-title.png" alt="Explore Ease" style="width: 40vw;" title="ExploreEase"/>
+
+    <div class="skipToLogin">
+      <button mat-button>
+        <span style="color: white;position: fixed; top: 2rem;right: 2rem;font-size: 1vw;"><a class="nav-link"  (click)="scrollToEnd()">Skip to Login / Regsiter ></a></span>
+      </button></div>
+    <span style="font-size: large;">
+      Discover Your Next Adventure: Welcome to Explore Ease! 
+    </span>
+      <br>
+      <br>
+      <span style="font-size: small; padding: 0 20vw 0;">
+      At ExploreEase ,
+      <br> we are thrilled to be your gateway to extraordinary
+      journeys and unforgettable experiences! Whether you crave the sun-kissed
+      beaches, historic landmarks, vibrant cultures, or breathtaking natural wonders,
+      we've got you covered.
+    </span>
+    
+
+  </section>
+
+
+    <section class="vertical-divider hidden">
+    <div class="vertical-line"></div>
+    </section>
+
+  <section class="carousel-section hidden">
+
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" >
+      <div class="carousel-inner">
+        <div class="carousel-item" *ngFor="let url of imageUrls; let isFirst = first" [ngClass]="{ 'active': isFirst }" data-bs-interval="2000">
+          <div class="carousel-image">
+            <img [src]= url.src [alt]=url.heading class="d-block w-100">
+            <div class="carousel-caption d-none d-md-block">
+              <div style="text-shadow:2px 2px 3px black ;">
+              <h5>{{url.heading}}</h5>
+              <p>{{url.desc}}</p>
+              <button mat-icon-button>
+                <mat-icon>
+                  keyboard_arrow_right
+                </mat-icon>
+              </button>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <span style="margin: 1rem;color: white;font-size: large;">    Choose your Go to Destination! </span>
+
+  </section>
+
+  <section class="vertical-divider hidden">
+    <div class="vertical-line"></div>
+  </section>
+  
+
+  <section>
+    <div class="user-action-section-main hidden" id="user-section">
+      <div class="user-action-section">
+        <div class="user-action-title">
+          Visit your dream places
+        </div>
+        <div style="margin: 1rem;font-size: small;">
+          Embark on Unforgettable Journeys - Book Now and Turn Dreams into Reality!
+        </div>
+        <div style="display: flex;gap: 1vw;color: white;">
+          <button mat-button style="color: white;" (click)="loginButton()">
+            Login
+          </button>
+          <button mat-button style="color: white;" (click)="registerButton()">
+            Register
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

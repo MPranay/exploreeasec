@@ -1,0 +1,58 @@
+
+
+
+      
+      <div class="content">
+    
+        <div class="location_pic">
+          <div class="title">
+            <p>Location Images</p>
+          </div>
+        <div class="image-container">
+        <mat-card class="image-card">
+          <mat-card-content>
+          <div class="image-card" *ngFor="let image of locationImages">
+            <img class="image_profile" [src]="image" alt="Image">
+            
+        </div>
+        </mat-card-content>
+        </mat-card>
+        </div>
+        </div>
+    
+        <div class="edit-div">
+          <form class="form">
+            <div class="form-field">
+              <label class="helper-text" for="fname">Ticket Price</label>
+              <input type="text" id="fname" [disabled]="true" name="fname" placeholder="Please set a Ticket price " required [(ngModel)]="currLocation.ticketPrice">
+            </div>
+            <div class="form-field">
+              <label class="helper-text" for="ld"> Location details</label>
+              <textarea type="text" id="ld" name="ld" [disabled]="true" placeholder=" location Details" required [(ngModel)]="currLocation.locationDetails"></textarea>
+            </div>
+            <div class="form-field">
+              <label class="helper-text" for="lf"> Locally famous:</label>
+              <textarea type="text" id="lf" name="lf" [disabled]="true" placeholder=" locally Famous" [(ngModel)]="currLocation.locallyFamous"></textarea>
+            </div>
+            <div class="form-field">
+              <label class="helper-text" for="AC"> Available Commutes:</label>
+              <textarea type="text" id="AC" name="AC" [disabled]="true" placeholder=" available Commutes" [(ngModel)]="currLocation.availableCommutes"></textarea>
+            </div>
+            <div class="form-field">
+              <label class="helper-text" for="touristAttractions"> Tourist attractions</label>
+              <textarea 
+                type="text" 
+                [disabled]="true"
+                id="touristAttractions"
+                class="form-control form-control-sm" 
+                name="touristAttractions"
+                placeholder=" tourist attractions"
+                required 
+                [(ngModel)]="currLocation.touristAttractions"></textarea>
+            </div>
+            <button mat-raised-button (click)="Route(currLocation.locationDetails)">Edit Details</button>
+          </form>
+          
+        </div>
+      </div>
+    

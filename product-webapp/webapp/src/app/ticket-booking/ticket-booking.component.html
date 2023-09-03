@@ -1,0 +1,61 @@
+<app-dashboard></app-dashboard>
+<div class="container-fluid bg-gradient">
+<div class="payment-body-main">
+ <div class="payment-div">
+  <div class="heading-text">
+    Ticket booking for {{locationName}}
+  </div>
+  <div class="payment-body">
+    <div class="payment-form">
+      <form class="row g-3">
+        <div class="col-md-6">
+          <label for="TripDate"  class="form-label col-form-label-sm">Select Trip Date</label>
+          <input type="date" [(ngModel)]="crrbooking.tripdate"  value="" class="form-control form-control-sm" id="TripDate">
+        </div>
+        <div class="col-md-6">
+          <label for="TimeSlot" class="form-label col-form-label-sm">Select Time Slot</label>
+          <input type="time"  class="form-control form-control-sm"  [(ngModel)]="crrbooking.timeslot" name="TimeSlot" id="TimeSlot">
+        </div>
+        <div class="col-md-6">
+            <label for="userName" class="form-label col-form-label-sm">Your Name</label>
+            <input type="text" class="form-control form-control-sm" [(ngModel)]="crrbooking.name" name="userName" id="userName">
+        </div>
+        <div class="col-md-6">
+            <label for="Contact" class="form-label col-form-label-sm">Contact</label>
+            <input type="number"  class="form-control form-control-sm" [(ngModel)]="crrbooking.phone" name="Contact" id="Contact1">
+        </div>
+        <div class="col-md-12">
+          <label for="email" class="form-label col-form-label-sm">Email Address</label>
+          <input type="email"   name="email" value="name@email.com" [(ngModel)]="crrbooking.email" class="form-control form-control-sm" id="email1">
+        </div>
+        <div class="mb-3">
+          <div class="row">
+            <div class="col-md-4">
+              <label style="font-size: small;" for="adults" class="form-label">Adults</label>
+              <div class="input-group">
+                <button class="btn btn-outline-secondary" type="button" (click)="decrementAdults()">-</button>
+                  <input type="text" [value]=crrbooking.adult [(ngModel)]="crrbooking.adult" class="form-control form-control-sm" id="ticketAdult" name="age">
+                <button class="btn btn-outline-secondary" type="button" (click)="incrementAdults()">+</button>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label style="font-size: small;" for="kids" class="form-label">Kids</label>
+              <div class="input-group">
+                <button class="btn btn-outline-secondary" type="button" (click)="decrementChildren()">-</button>
+                <input type="text" [value]=crrbooking.children [(ngModel)]="crrbooking.children" class="form-control form-control-sm" id="ticketChild" name="ticketChild">
+                <button class="btn btn-outline-secondary" type="button" (click)="incrementChildren()">+</button>
+              </div>
+            </div>
+          </div>
+          </div>
+      </form>
+    </div>
+    <div class="right-image">
+      <img src="../../assets/ticketbooking.png" class="right-img">
+    </div>
+    
+
+  </div>
+  <button mat-raised-button (click)="payNow()" type="button" style="background-color: #212a3e;color: white;margin-bottom: 1rem;">Book Ticket</button>
+</div>
+ </div>

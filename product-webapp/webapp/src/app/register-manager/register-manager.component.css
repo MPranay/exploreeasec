@@ -1,0 +1,108 @@
+.register-form{
+  display: flex;
+  background-color: #ffffff;
+  flex-direction: column;
+  align-items: center;
+  width: 35rem;
+  padding: 1rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 30rem;
+  box-shadow:  -4px 0px 20px 0px #929aef;
+  border-radius: 5px;
+}
+
+.helper-text{
+  font-weight: 400;
+  font-size: x-small;
+  min-width: fit-content;
+}
+.helper-text-pfp{
+  font-weight: 100;
+  font-size: x-small;
+  min-width: fit-content;
+}
+.register-card{
+  background-color: #d2e6f7;
+  background-image: linear-gradient(328deg, #221122 0%, #474e64 55%, #241524 100%);;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.button-div{
+  padding : 1rem 0 1rem;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.3); 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.5); 
+}
+.manager-pfp
+{
+  height: 4.5rem;
+  width: 4.7rem;
+  border-radius: 50px;
+}
+.add-manager-pfp
+{
+  position: relative;
+  bottom: 30%;
+  right: 40%;
+}
+.welcome-message{
+  display: flex;
+  background-color: #212a3e;
+  flex-direction: column;
+  align-items: center;
+  width: 15rem;
+  height: 30rem;
+  opacity: 95%;
+  border-radius: 5px 0 0 5px;
+  color: white;
+  padding: 1rem;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  text-align: center;
+}
+.logo{
+  width: 200px;
+}
+.image-upload-input
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:1rem;
+  margin-bottom: 1rem;
+}
+.image-upload-input-field{
+  margin-left:2rem;
+  font-size: 10px;
+}
+.register-form-area{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+::-webkit-input-placeholder {
+  font-size: 10px!important;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+     font-size: 10px!important;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+     font-size: 10px!important;
+}

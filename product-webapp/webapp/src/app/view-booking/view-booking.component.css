@@ -1,0 +1,40 @@
+/* styles.css */
+.card-container {
+    display: flex;
+    flex-direction: column;
+    max-height: calc(5 * (60px + 24px)); /* 5 cards, each 100px + 20px margin */
+    overflow-y: auto; /* Enable vertical scrolling */
+  }
+  .card {
+    display: flex;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    align-items: center;
+  }
+  
+  .booking-info {
+    display: flex;
+    flex-direction: column; /* Stack button below the details */
+    align-items: flex-start; /* Align items to the left edge */
+    width: 100%;
+  }
+  
+  .booking-details {
+    display: flex;
+    flex-direction: row; /* Display details in a row */
+    justify-content: space-between; /* Space between details */
+    width: 100%; /* Ensure the details span the full width */
+  }
+  
+  .booking-text {
+    flex: 1; /* Allow booking text to take up available space */
+  }
+  
+  .clear-button {
+    background-color: #ff0000;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+  }
+  

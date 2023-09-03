@@ -1,0 +1,42 @@
+.user-profile-card{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+   }
+
+   .user-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    padding: 1rem;
+   }
+
+   .heading-text{
+    font-size: x-large;
+    color: white;
+    background-color: black;
+    text-align: center;
+   }
+
+   .profile-image{
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+   }
+
+   .user-details{
+    width: 40rem;
+   }
+   .button-div{
+    display: flex;
+    gap: 2rem;
+}
+.user-image{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}

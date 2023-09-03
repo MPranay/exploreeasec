@@ -1,0 +1,94 @@
+.user-homepage-body{
+    margin: 0;
+    padding-bottom: 10vh;
+    width: fit-content;
+    min-height: 100vh;
+    height: fit-content + 10vh;
+    background-image: radial-gradient( circle 995.6px at 50.6% 96.9%,  rgba(61,76,110,1) 0%, rgba(25,32,48,1) 90% );
+}
+.carousel-section{
+    padding: 10vh 10vw;
+    min-height: 50vh;
+}
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+}
+.carousel-image{
+    width: fit-content;
+    height: 25vw;
+  
+}
+.top-page-bar{
+    width: 100%;
+    height: 10vh;
+    background-color: #141925 ;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 2rem;
+    box-shadow: 4px 0px 20px 0px black;
+}
+.section-heading{
+    color: white;
+    justify-content: left;
+    margin: 2rem 0 0 10vw;
+}
+.recommended-section{
+    margin:5vh 0;
+    display: grid;
+    column-gap: 50px;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+}
+.location-card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0;
+    max-width: 400px;
+}
+.location-card{
+    height: 35vh;
+    width: 25vw;
+}
+.recommended-section-image{
+    width: 20vw;
+    padding: 1rem;
+    
+}
+.card-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1vw;
+}
+.button-div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.filter-section{
+    color: white;
+}
+.filter-options{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 2rem;
+    margin: 2rem;
+}
+.filter-option-single{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+.filter-Div{
+    margin: 1rem 10vw 1rem;
+}

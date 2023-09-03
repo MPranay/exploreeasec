@@ -1,0 +1,11 @@
+.review-div{
+    background-color: #87aaf76c;
+    height:20rem;
+    margin: 2rem;
+    overflow: auto;
+    display: grid;
+    grid-template-columns: auto auto ;
+    padding: 1rem;
+    justify-content: center;
+
+}

@@ -1,0 +1,34 @@
+<div class="footer">
+    <img class="logo" src="../../assets/logo-inverted-without-text-square.png" title="ExploreEase"/>
+    <div class="social-icons">
+        <div class="social-icons-header-text">
+            Follow us on these platforms for exciting news and updates about ExploreEase !
+        </div>
+        <div class="social-icons-div">
+            <button mat-icon-button>
+                <mat-icon>
+                    facebook
+                </mat-icon>
+            </button>
+        </div>
+    </div>
+
+    <div class="contact-us-div">
+        <span>
+           Stay Updated :
+        </span>
+        <div class="contact-form">
+            <input 
+            type="text" 
+            class="form-control form-control-sm" 
+            name="email" 
+            placeholder="Enter your Email for Updates"
+            [(ngModel)]="email">
+            <button mat-icon-button (click)="notify()">
+                <mat-icon>
+                    send
+                </mat-icon>
+            </button>
+        </div>
+    </div>
+</div>

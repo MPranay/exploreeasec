@@ -1,0 +1,160 @@
+
+
+
+.maindiv {
+    margin: auto;
+    padding: 1.5% 1%;
+    align-items: center;
+    width: 70vw;
+    height: 80vh;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+.maincontainer {
+    background-image: linear-gradient(328deg, #221122 0%, #474e64 55%, #241524 100%);
+    padding-top: 3%;
+    
+    height: 93vh;
+    overflow-y: hidden;
+}
+.heading {
+    background-color: black;
+}
+
+.heading p {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+    color: white;
+    padding: 10px 5px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    /* background-color: rgb(91, 178, 254); */
+    height: 30rem;
+    
+}
+
+.location_pic {
+    /* background-color: rgb(158, 241, 241); */
+    padding: 2% 4%;
+    
+    border-radius: 5px;
+}
+.image-container{
+    padding: 2% 4%;
+    max-height: calc(5 * (50px + 20px)); /* 5 cards, each 100px + 20px margin */
+    overflow-y: auto;
+    border-radius: 5px;
+    width:125%;
+}
+
+.choose-file {
+    font-size: 12px;
+    width: 40px;
+    height: auto;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+.useredit-pfp
+{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50px;
+    margin-top: 1rem;
+}
+
+.edit-user-pfp
+{
+    position: relative;
+    bottom: 30%;
+    right: 40%;
+}
+
+.update-button {
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    background-color: black;
+}
+
+.title p {
+    font-size: 14px;
+    /* font-weight: bold; */
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+    padding: 8px 24px;
+}
+
+.image_profile {
+    width: 120px;
+    height: 120px;
+}
+
+.image_profile img {
+    height: 100%;
+}
+
+.edit-div {
+    /* background-color: #787878; */
+   
+    border-radius: 4px;
+    padding: 0 20px;
+}
+
+
+.form {
+    margin-top: 10px;
+    width: 25vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+textarea::placeholder{
+    color: #c6c6c6;
+}
+
+input[type=text],
+input[type=number],
+input[type=password],
+textarea[type=text],
+textarea[type=number],
+textarea[type=password],
+select {
+    width: 100%;
+    padding: 4px 20px;
+    margin: 1px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-size: 10px;
+    
+}
+
+.form-field {
+    font-size: 9px;
+    font-weight: bold;
+    color: #242424;
+}
+.image-card{
+    height: 10rem;
+    width: 10rem;
+}

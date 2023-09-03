@@ -1,0 +1,46 @@
+<app-dashboard></app-dashboard>
+<div class="login-div">
+    <div class="login-card">
+        <img class="left-image" src="../../assets/login.jpg">
+        <div class="login-form-area">
+            <span style="
+                font-size: large;
+                margin-bottom:2rem;
+                text-align: center;">
+                MANAGER LOGIN</span>
+        <form class="login-form">
+            <div class="form-group">
+                <label class="helper-text" for="exampleFormControlInput1">Email address</label>
+                <input 
+                    type="email"
+                    class="form-control form-control-sm" 
+                    name="managername"
+                    placeholder="name@example.com"
+                    [(ngModel)]="manager.email">
+            </div>
+            <div class="form-group">
+              <label class="helper-text" for="exampleInputPassword1">Password</label>
+              <input 
+                type="password" 
+                class="form-control form-control-sm" 
+                name="password"
+                placeholder="Password"
+                required 
+                [(ngModel)]="manager.password">
+                <span class="forgot-password-span">
+                    <button mat-button (click)="forgotPassword()">Forgot Password ?</button>
+                </span>
+            </div>
+            </form>
+            <div class="button-div">
+                <button mat-raised-button style="background-color: #212a3e;color: white;" (click) = "onSubmit()">Submit</button>
+            </div>
+            <div class="login-footer">
+                <a href="#/register">New Manager ? Register Here</a>
+                <a href="#/login">User Login<mat-icon>right-arrow</mat-icon></a>
+            </div>
+        </div>
+    </div>
+
+</div>
+

@@ -1,0 +1,61 @@
+
+<app-dashboard></app-dashboard>
+<div class="maincontainer">
+
+    <div class="maindiv">
+      <div class="heading">
+        <p>ADD LOCATION</p>
+      </div>
+      <div class="content">
+    
+        <div class="profile_pic">
+          <div class="title">
+            <p>Location Images</p>
+          </div>
+    
+          <div class="image-upload-input">
+            <span class="helper-text-pfp">Add Location Images</span><br><br><br>
+            <!-- <img class="useredit-pfp" [src]="url" alt="Profile Picture"/> -->
+               
+                    <input class="image-upload-input-field" (change)="imageUpload($event)"  
+                    type="file" multiple>
+        </div>
+        </div>
+    
+        <div class="edit-div">
+          <form class="form">
+            <div class="form-field">
+                <label class="helper-text" for="fname">Set Ticket Price</label>
+                <input type="text" id="fname" name="fname" placeholder="Please set a Ticket price " required [(ngModel)]="currLocation.ticketPrice">
+              </div>
+            <div class="form-field">
+              <label class="helper-text" for="ld">Add location details</label>
+              <textarea type="text" id="fname" name="ld" placeholder="Add location Details" required [(ngModel)]="currLocation.locationDetails"></textarea>
+            </div>
+            <div class="form-field">
+              <label class="helper-text" for="lf">Add locally famous:</label>
+              <textarea type="text" id="email" name="lf" placeholder="Add locally Famous" [(ngModel)]="currLocation.locallyFamous"></textarea>
+            </div>
+            <div class="form-field">
+              <label class="helper-text" for="ac">Add Available Commutes:</label>
+              <textarea type="text" id="username" name="ac" placeholder="Add available Commutes" [(ngModel)]="currLocation.availableCommutes"></textarea>
+            </div>
+            <div class="form-field">
+              <label class="helper-text" for="touristAttractions">Add tourist attractions</label>
+              <textarea 
+                type="text" 
+                class="form-control form-control-sm" 
+                name="touristAttractions"
+                placeholder="Add tourist attractions"
+                required 
+                [(ngModel)]="currLocation.touristAttractions"></textarea>
+            </div>
+            
+          </form>
+          <div class="update-button">
+            <button (click)="onSubmit()">ADD</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>

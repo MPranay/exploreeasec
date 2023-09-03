@@ -1,0 +1,101 @@
+/* 
+  .user-container{
+    min-height: 70vh;
+  }
+  
+  .inline-text{
+    
+    margin-left: 100px;
+   
+  }
+  .details{
+    display: flex;
+    gap: 50px; 
+    align-items: center;
+  }
+  .left-section{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; 
+    overflow: hidden;
+  }
+  .Profile-image{
+     
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  
+  }
+  .a{
+    margin-top: 10px;
+    margin-left:100px ;
+    font-size: medium;
+  }
+ 
+  
+
+  .table-borderless{
+    background-color: white;
+    color: black;
+    margin-top: 40px;
+    margin-left: 200px;
+    font-size: medium;
+
+
+  }
+  
+ 
+  
+ 
+
+
+  
+  
+  
+  
+  
+   */
+
+
+
+   .user-profile-div{
+    min-height: 100vh;
+    background-color: #212a3e;
+    background-image: linear-gradient(303deg, #212a3e 0%, #1e345a 46%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   .user-profile-card{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+   }
+
+   .main-tab{
+    height: 30rem;
+    width: 70rem;
+    background-color: white;
+   }
+
+   .user-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   }
+
+   .heading-text{
+    font-size: x-large;
+    color: white;
+    background-color: black;
+    text-align: center;
+   }
+
+   .profile-image{
+    width: 10rem;
+    border-radius: 50%;
+   }
+
+   .user-details{
+    width: 30rem;
+   }

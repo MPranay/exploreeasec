@@ -1,0 +1,52 @@
+
+<div class="user-profile-card">
+    <span class="heading-text">User Details</span>
+    <div class="user-info">
+      <div class="user-image">
+        <img class="profile-image" [src]="url">
+      </div>
+      <div class="user-details">
+        <form class="row g-3">
+          <div class="col-md-6">
+            <label for="inputEmail4"  class="form-label col-form-label-sm">Email</label>
+            <input type="email" disabled="true" class="form-control form-control-sm" [(ngModel)]=userData.email name="manageremail" id="staticEmail" >
+          </div>
+          <div class="col-md-6">
+            <label for="inputFullname" class="form-label col-form-label-sm">Full Name</label>
+            <input type="text" [disabled]="fieldEditDisabled" class="form-control form-control-sm" [(ngModel)]=userData.name name="managername" id="inputFullname1">
+          </div>
+          <div class="col-md-6">
+              <label for="inputCurrentPassword" class="form-label col-form-label-sm">Password</label>
+              <input type="password" [disabled]="passEditDisbaled" class="form-control form-control-sm" name="currentPassword" [(ngModel)]="userData.password" id="inputCurrentPassword1">
+          </div>
+          
+          <div class="col-md-4">
+              <label for="inputUsername" class="form-label col-form-label-sm">Username</label>
+              <input type="text" [disabled]="fieldEditDisabled" class="form-control form-control-sm" [(ngModel)]=userData.username name="username" id="inputUsername1">
+          </div>
+          <div class="col-md-2">
+            <label for="inputContact" class="form-label col-form-label-sm">Contact</label>
+            <input type="text" [disabled]="fieldEditDisabled" [(ngModel)]=userData.contact name="contact" class="form-control form-control-sm" id="inputContact1">
+          </div>
+          <div class="col-md-2">
+              <label for="inputAge" class="form-label col-form-label-sm">Age</label>
+              <input type="text" *ngIf="fieldEditDisabled" [disabled]="fieldEditDisabled" [(ngModel)]=userData.age class="form-control form-control-sm" id="inputAge" name="age">
+              <input type="date" *ngIf="!fieldEditDisabled" [(ngModel)]="age" class="form-control form-control-sm" id="inputAge" name="age">
+          </div>
+          <div class="col-md-12 button-div">
+            <button type="submit" *ngIf="fieldEditDisabled" class="btn btn-primary" (click)="editProfile()">Edit Details</button>
+            <!-- <button type="submit" *ngIf="!fieldEditDisabled && passEditDisbaled" class="btn btn-success" (click)="[disableFieldEdit()]">Confirm</button>
+            <button type="submit" *ngIf="!fieldEditDisabled && passEditDisbaled" class="btn btn-danger" (click)="disableFieldEdit()">Cancel</button>
+            <button type="submit" *ngIf="passEditDisbaled" class="btn btn-primary" (click)="enablePasswordEdit()">Change Password</button>
+            <button type="submit" *ngIf="!passEditDisbaled && fieldEditDisabled" class="btn btn-success">Confirm</button>
+            <button type="submit" *ngIf="!passEditDisbaled && fieldEditDisabled" class="btn btn-danger" (click)="disablePasswordEdit()">Cancel</button>
+            <button type="submit" *ngIf="!passEditDisbaled && !fieldEditDisabled" class="btn btn-success">Confirm All</button>
+            <button type="submit" *ngIf="!passEditDisbaled && !fieldEditDisabled" class="btn btn-danger" (click)="reset()">Reset</button> -->
+        </div>
+        </form>
+      </div>
+    </div>
+    <div class="booking Details">
+
+    </div>
+  </div>

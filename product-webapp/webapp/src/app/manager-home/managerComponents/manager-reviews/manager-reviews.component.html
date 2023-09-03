@@ -1,0 +1,12 @@
+<div class="review-div">
+    <div *ngFor="let each of review" style="height: 5rem; margin: 2rem;">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">{{each.user}}</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">Ratings Given - {{each.rating}}/5</h6>
+              <p class="card-text">User Comment - {{each.comment}}</p>
+            </div>
+          </div>
+    </div>
+
+</div>

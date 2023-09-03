@@ -1,0 +1,16 @@
+<app-dashboard></app-dashboard>
+<!-- app.component.html -->
+<div class="card-container">
+    <div class="card" *ngFor="let booking of bookings">
+      <div class="booking-info">
+        <div class="booking-details">
+          <p class="booking-text">{{ booking.name }}</p>
+          <p class="booking-text">{{ booking.date }}</p>
+          <!-- Other booking details here -->
+        
+        <button class="clear-button" >Clear</button>
+    </div>
+      </div>
+    </div>
+  </div>
+  

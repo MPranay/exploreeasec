@@ -1,0 +1,20 @@
+.full-width {
+  width: 100%;
+}
+
+.star-rating {
+  color: goldenrod;
+  
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
+.rating-container{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  gap: 10px;
+  padding-bottom: 20px;
+  width: 100%;
+}

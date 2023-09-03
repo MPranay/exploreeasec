@@ -1,0 +1,31 @@
+
+.logo{
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 100px;
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+.icon-help{
+  display: flex;
+  flex-direction: column;
+  font-size: xx-small;
+  margin: 1rem .5rem 0 2rem;
+}
+.dashboard-top{
+  position: fixed;
+  z-index: 999;
+  background-color: #f1f6f9;
+  width: 100vw;
+  top: 0;
+}
+.dashboard-div{
+  padding-bottom: 3rem;
+}
+.icon-button-div{
+  display: flex;
+  flex-direction: row;
+  gap: 0.75rem;
+}
